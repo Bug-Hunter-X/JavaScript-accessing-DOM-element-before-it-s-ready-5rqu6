@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correct approach: wait for DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log(document.getElementById('myDiv').textContent);
+    });
+  </script>
+</body>
+</html>
